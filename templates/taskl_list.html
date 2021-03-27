@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<h1>Below are the tasks list of Todo list app:::</h1>
+{% for list in task %}
+<div class="container" style="background-color: grey;">
+    <div class="jumbotron">
+        <caption>{{list.title}}</caption>
+
+    </div>
+</div>
+
+{% endfor %}
+{% endblock %}
